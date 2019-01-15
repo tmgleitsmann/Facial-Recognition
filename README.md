@@ -7,6 +7,7 @@ Be sure to include profile images of yourself in a folder named after the NameID
 
 Step1:
 Execute faces-train.py (training program)
+
 Step2:
 execute OCVTest.py
 This program will launch any capture device and start recording for faces & eyes.
@@ -15,5 +16,6 @@ then it appends the image label to a list and creates a dictionary slot for it i
 the frequency that the face appears. 
 ie) if tom-gleitsmann appears 8 times then {tom-gleitsmann: 8}
 Once a label is recorded 10 times then it sends that label to mongoConnect.py and searches the database for the corresponding person's data. (Searches for a document match on theNameID:"~~~~~" key)
+
 This is then returned to OCVTest.py and the program terminates. 
 
